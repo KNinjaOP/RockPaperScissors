@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>👊 🖐 ✌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="RockPaperScissors.css">
+</head>
+
+<body>
+  <img src="purple.jpg" class="backgroundImage">
+  <div class='main'>
+    <p>
+      Rock Paper Scissors
+    </p>
+    <div>
+      <button onclick="
+      playGame('👊');
+      ">👊</button>
+      <button onclick="
+      playGame('🖐');
+      ">🖐</button>
+      <button onclick="
+      playGame('✌');
+      ">✌</button>
+    </div>
+
+    <p class="result"></p>
+    <p class="moves"></p>
+    <p class="score"></p>
+
+    <button onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    " class="Reset">
+      Reset Score
+    </button>
+  </div>
+
+  <script src="RockPaperScissors.js"></script>
+
+</body>
+
+</html>
